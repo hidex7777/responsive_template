@@ -1,0 +1,19 @@
+{
+  "name": "responsive_template",
+  "version": "0.0.0",
+  "description": "responsive web template consists of htm, scss, grunt, coffee and some images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hidex7777/responsive_template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hidex7777/responsive_template/issues"
+  },
+  "homepage": "https://github.com/hidex7777/responsive_template"
+}
