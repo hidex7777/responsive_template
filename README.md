@@ -10,6 +10,7 @@ responsive web template consists of html, scss, grunt, coffee and some images
     |--dev/
     |  |--coffee/
     |  |  |--grobal.coffee
+    |  |  |--.jshintrc
     |  |--scss/
     |  |  |--_mixins.scss
     |  |  |--_pccs.scss
@@ -80,6 +81,5 @@ responsive web template consists of html, scss, grunt, coffee and some images
 
 ## todo(2014-03-24)
 
-    create Gruntfile.coffee
     add some files
     work hard
