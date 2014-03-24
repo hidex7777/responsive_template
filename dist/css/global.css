@@ -1,0 +1,91 @@
+a, a:visited {
+  color: #75362a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #da927a;
+  text-decoration: underline;
+}
+
+html {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+html body {
+  background-image: url("../img/texture.png");
+  background-color: #e7d5d4;
+  color: black;
+  text-shadow: 0 1px 0 white;
+  height: 100%;
+}
+html body #header {
+  margin-bottom: 10px;
+}
+html body #container .heading1 {
+  font-weight: bold;
+  font-size: 32px;
+  border-left: 5px solid #75362a;
+  padding-left: 5px;
+}
+html body #container .heading2 {
+  font-weight: bold;
+  font-size: 24px;
+  border-left: 3px solid #75362a;
+  padding-left: 5px;
+}
+html body #container #headline {
+  width: 100%;
+}
+html body #footer #copyright {
+  text-align: center;
+  font-size: 11px;
+  color: #7f7f7f;
+}
+
+body #header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media all and (min-width: 768px) {
+  body #header {
+    display: none;
+  }
+  body #container {
+    background-color: orange;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+  }
+  body #container #headline {
+    width: 90%;
+    margin: 0 auto;
+    background-color: green;
+    padding-left: 215px;
+  }
+  body #container #sidebar {
+    float: left;
+    width: 200px;
+  }
+  body #container #main {
+    margin-left: 215px;
+  }
+  body #footer #footerNav {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  body #footer #footerNav ul {
+    list-style: none;
+    overflow: hidden;
+  }
+  body #footer #footerNav ul li {
+    float: left;
+    width: 17%;
+    text-align: center;
+  }
+}

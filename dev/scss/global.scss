@@ -1,0 +1,141 @@
+@charset "utf-8";
+@import "mixins.scss";
+@import "pccs.scss";
+//global.scss
+//color-sheme: variables see _pccs.scss
+$base: $p2;//base-color = 70%
+$asso: $dk4;//assort-color = 25%
+$acce: $ltg8;//accent-color = 5%
+$text: $Bk;//text-color
+$link: $dk4;//link-color
+$linkh: $sf4;//link-hover-color
+
+a, a:visited {
+	color: $link;
+	text-decoration: none;
+}
+a:hover {
+	color: $linkh;
+	text-decoration: underline;
+}
+//global layout
+html {
+	font:{
+		size: 14px;
+		family: sans-serif;
+	}
+	//height: 100%;
+	body {
+		background:{
+			image: url('../img/texture.png');
+			color: $base;
+		}
+		color: $text;
+		text-shadow: 0 1px 0 $W;
+		height: 100%;
+		#header {
+			margin-bottom: 10px;
+			#headerNav {
+				//margin-bottom: 15px;
+				
+			}
+			
+		}
+		#container {
+			//height: auto;
+			//min-height: auto;
+			//margin-top: 100px;
+			//padding-top: 15px;
+			.heading1 {
+				font:{
+					weight: bold;
+					size: 32px;
+				}
+				border-left: 5px solid $asso;
+				padding-left: 5px;
+			}
+			.heading2 {
+				font:{
+					weight: bold;
+					size: 24px;
+				}
+				border-left: 3px solid $asso;
+				padding-left: 5px;
+			}
+			#headline {
+				width: 100%;
+				
+			}
+			#sidebar {
+				//width: 100%;
+			}
+			#main {
+				//width: 100%;
+			}
+		}
+		#footer {
+			#copyright {
+				text-align: center;
+				font:{
+					size: 11px;
+				}
+				color: $mGy;
+			}
+		}
+	}
+}
+//phone style
+body {
+	#header {
+		display: block;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+}
+//tablet style
+
+//desktop style
+@media all and (min-width: 768px) {
+	body {
+		#header {
+			display: none;
+		}
+		#container {
+			background-color: orange;//debug
+			overflow: hidden;
+			width: 90%;
+			margin: 0 auto;
+			#headline {
+				width: 90%;
+				margin: 0 auto;
+				background-color: green;//debug
+				padding-left: 215px;
+			}
+			#sidebar {
+				float: left;
+				width: 200px;
+			}
+			#main {
+				margin-left: 215px;
+			}
+		}
+		#footer {
+			#footerNav {
+				display: block;
+				width: 90%;
+				margin: 0 auto;
+				ul {
+					list-style: none;
+					overflow: hidden;
+					li {
+						float: left;
+						width: 17%;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}

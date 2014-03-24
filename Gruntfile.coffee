@@ -11,6 +11,7 @@ module.exports = (grunt) ->
 					sassDir: "<%= dir.src %>/scss"
 					cssDir: "<%= dir.dist %>/css"
 					imagesDir: "<%= dir.src %>/img"
+					noLineComments: true
 		autoprefixer:
 			options:
 				browsers: [ "last 2 version", "ie 8", "ie 9" ]
@@ -23,7 +24,7 @@ module.exports = (grunt) ->
 				dest: "<%= autoprefixer.dev.src %>"
 		csslint:
 			check:
-				src: "<%= dir.dist %>/css/*.css"
+				src: "<%= autoprefixer.dev.src %>"
 		copy:
 			spritesImg:
 				expand: true
@@ -42,19 +43,15 @@ module.exports = (grunt) ->
 				dest: "<%= dir.dist %>/js/"
 				ext: '.js'
 		jshint:
-			options:
-				jshintrc: "<%= dir.src %>/coffee/.jshintrc"
+			#options:
+				#jshintrc: "<%= dir.src %>/coffee/.jshintrc"
 			src:
-				src: "<%= dir.dist %>/js/*.js"
+				src: "<%= dir.dist %>/js/global.js"
 		connect:
 			uses_defaults: {}
 		watch:
-			compassdev:
-				files: "<%= dir.src %>/**/*.scss"
-				tasks: ["compass", "copy:spritesImg", "autoprefixer", "csscomb", "csslint", "clean:deleteSprites"]
-			jsdev:
-				files: "<%= dir.src %>/**/*.coffee"
-				tasks: ["coffee", "jshint"]
+			files: ["<%= dir.src %>/**/*.scss", "<%= dir.src %>/**/*.coffee"]
+			tasks: ["compass", "copy:spritesImg", "autoprefixer", "csscomb", "csslint", "clean:deleteSprites", "coffee", "jshint"]
 
 	#plugin
 	for taskName of pkg.devDependencies

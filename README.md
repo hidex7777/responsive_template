@@ -68,6 +68,7 @@ responsive web template consists of html, scss, grunt, coffee and some images
 
 - Node.js
 - grunt-cli
+- Compass / ruby
 
 ## workflow
 
@@ -83,3 +84,10 @@ responsive web template consists of html, scss, grunt, coffee and some images
 
     add some files
     work hard
+
+## FAQ
+
+- `Errno::EACCES on line ["897"] of C: Permission denied`
+
+see: <http://stackoverflow.com/questions/22596760/yeoman-error-errnoeacces-on-line-897-of-c-permission-denied/22597296#22597296>
+

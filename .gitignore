@@ -1,2 +1,4 @@
 node_modules/
 .sass-cache/
+temp data.txt
+desktop.ini
