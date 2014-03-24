@@ -1,6 +1,6 @@
 # responsive_template
 
-responsive web template consists of htm, scss, grunt, coffee and some images
+responsive web template consists of html, scss, grunt, coffee and some images
 
 ----
 
@@ -75,21 +75,11 @@ responsive web template consists of htm, scss, grunt, coffee and some images
 - `npm install`
 - `grunt dev`
 - work
-- `grunt dep`
+- `grunt dist`
 - deploy
 
-## todo(2014-03-23)
+## todo(2014-03-24)
 
-    npm install grunt --save-dev
-    npm install grunt-autoprefixer --save-dev
-    npm install grunt-contrib-copy --save-dev
-    npm install grunt-contrib-clean --save-dev
-    npm install grunt-contrib-csslint --save-dev
-    npm install grunt-contrib-compass --save-dev
-    npm install grunt-contrib-connect --save-dev
-    npm install grunt-contrib-watch --save-dev
-    npm install grunt-contrib-coffee --save-dev
-    npm install grunt-contrib-jshint --save-dev
-    npm install grunt-csscomb --save-dev
     create Gruntfile.coffee
-
+    add some files
+    work hard
