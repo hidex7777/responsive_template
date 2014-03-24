@@ -23,11 +23,23 @@ responsive web template consists of htm, scss, grunt, coffee and some images
     |  |--favicon.xcf
     |  |--apple-touch-icon.xcf
     |  |--og.xcf
-    |--dep/
+    |--dist/
     |  |--js/
+    |  |  |--bootstrap.min.js
     |  |  |--global.js
     |  |--css/
+    |  |  |--bootstrap.css
+    |  |  |--bootstrap.css.map
+    |  |  |--bootstrap.min.css
+    |  |  |--bootstrap-theme.css
+    |  |  |--bootstrap-theme.css.map
+    |  |  |--bootstrap-theme.min.css
     |  |  |--global.css
+    |  |--fonts/
+    |  |  |--glyphicons-halflings-regular.eot
+    |  |  |--glyphicons-halflings-regular.svg
+    |  |  |--glyphicons-halflings-regular.ttf
+    |  |  |--glyphicons-halflings-regular.woff
     |  |--img/
     |  |  |--sprites.-xxx.png
     |  |  |--dummy.png
@@ -56,13 +68,12 @@ responsive web template consists of htm, scss, grunt, coffee and some images
 - Node.js
 - grunt-cli
 
-## tasks
+## workflow
 
-- npm init#
-- npm install grunt --save-dev => package.json#
+- download this template
 - modify package.json
 - `npm install`
-- `grund dev`
+- `grunt dev`
 - work
 - `grunt dep`
 - deploy
@@ -81,4 +92,4 @@ responsive web template consists of htm, scss, grunt, coffee and some images
     npm install grunt-contrib-jshint --save-dev
     npm install grunt-csscomb --save-dev
     create Gruntfile.coffee
-    
+
