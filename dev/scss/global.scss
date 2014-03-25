@@ -4,8 +4,8 @@
 //global.scss
 //color-sheme: variables see _pccs.scss
 $base: $p2;//base-color = 70%
-$asso: $dk4;//assort-color = 25%
-$acce: $ltg8;//accent-color = 5%
+$asso: $ltg8;//assort-color = 25%
+$acce: $dk4;//accent-color = 5%
 $text: $Bk;//text-color
 $link: $dk4;//link-color
 $linkh: $sf4;//link-hover-color
@@ -24,7 +24,7 @@ a:hover {
 //global layout
 html {
 	font:{
-		size: 14px;
+		size: 16px;
 		family: sans-serif;
 	}
 	body {
@@ -147,6 +147,22 @@ body {
 			margin: 0 auto;
 			margin-top: 50px;
 			padding-top: 15px;
+			.heading1 {
+				position: relative;
+				width: 100%;
+				height: 0%;
+				padding-top: 56.25%;
+				.cover {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					//height: 100%;
+					background-image: url('../img/logo_shadow480x270.png');
+					//content: url('../img/logo_shadow480x270.png');
+					z-index: 9;
+				}
+			}
 		}
 		.sidebar {
 			display: none;
