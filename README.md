@@ -42,7 +42,7 @@ responsive web template consists of html, scss, grunt, coffee and some images
     |  |  |--glyphicons-halflings-regular.ttf
     |  |  |--glyphicons-halflings-regular.woff
     |  |--img/
-    |  |  |--sprites.-xxx.png
+    |  |  |--sprites-xxx.png
     |  |  |--dummy.png
     |  |  |--item.png
     |  |  |--texture.png
@@ -80,8 +80,9 @@ responsive web template consists of html, scss, grunt, coffee and some images
 - `grunt dist`
 - deploy
 
-## todo(2014-03-24)
+## todo(2014-03-25)
 
+    remove ids <http://csslint.net/about.html>
     add some files
     work hard
 

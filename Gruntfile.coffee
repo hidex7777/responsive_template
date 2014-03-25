@@ -16,8 +16,8 @@ module.exports = (grunt) ->
 			options:
 				browsers: [ "last 2 version", "ie 8", "ie 9" ]
 			dev:
-				src: "<%= dir.dist %>/css/grobal.css"
-				dest: "<%= autoprefixer.dev.src %>"
+				src: "<%= dir.dist %>/css/global.css"
+				dest: "<%= dir.dist %>/css/global.css"
 		csscomb:
 			dev:
 				src: "<%= autoprefixer.dev.src %>"
@@ -48,7 +48,9 @@ module.exports = (grunt) ->
 			src:
 				src: "<%= dir.dist %>/js/global.js"
 		connect:
-			uses_defaults: {}
+			server:
+				options:
+					port: 80
 		watch:
 			files: ["<%= dir.src %>/**/*.scss", "<%= dir.src %>/**/*.coffee"]
 			tasks: ["compass", "copy:spritesImg", "autoprefixer", "csscomb", "csslint", "clean:deleteSprites", "coffee", "jshint"]

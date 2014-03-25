@@ -18,13 +18,41 @@ a:hover {
 	color: $linkh;
 	text-decoration: underline;
 }
+//responsive tips
+//height hack
+html{
+	height: 100%;
+}
+body {
+	height: 100%;
+	#container {
+		height: auto;
+	}
+}
+#container {
+	min-height: 100%;
+	height: 100%;
+}
+//bar button
+.icon-bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+	margin-top: 4px;
+}
+h1 {
+	display: none;
+	
+}
+
+
 //global layout
 html {
 	font:{
 		size: 14px;
 		family: sans-serif;
 	}
-	//height: 100%;
 	body {
 		background:{
 			image: url('../img/texture.png');
@@ -32,7 +60,9 @@ html {
 		}
 		color: $text;
 		text-shadow: 0 1px 0 $W;
-		height: 100%;
+		p {
+			margin-top: 14px;
+		}
 		#header {
 			margin-bottom: 10px;
 			#headerNav {
@@ -42,10 +72,6 @@ html {
 			
 		}
 		#container {
-			//height: auto;
-			//min-height: auto;
-			//margin-top: 100px;
-			//padding-top: 15px;
 			.heading1 {
 				font:{
 					weight: bold;
@@ -64,7 +90,6 @@ html {
 			}
 			#headline {
 				width: 100%;
-				
 			}
 			#sidebar {
 				//width: 100%;
@@ -72,14 +97,14 @@ html {
 			#main {
 				//width: 100%;
 			}
-		}
-		#footer {
-			#copyright {
-				text-align: center;
-				font:{
-					size: 11px;
+			#footer {
+				#copyright {
+					text-align: center;
+					font:{
+						size: 11px;
+					}
+					color: $mGy;
 				}
-				color: $mGy;
 			}
 		}
 	}
@@ -95,7 +120,9 @@ body {
 	}
 }
 //tablet style
+@media all and (min-width: 480px) {
 
+}
 //desktop style
 @media all and (min-width: 768px) {
 	body {
@@ -103,7 +130,7 @@ body {
 			display: none;
 		}
 		#container {
-			background-color: orange;//debug
+			
 			overflow: hidden;
 			width: 90%;
 			margin: 0 auto;
@@ -116,23 +143,26 @@ body {
 			#sidebar {
 				float: left;
 				width: 200px;
+				background-color: red;//debug
 			}
 			#main {
+				background-color: orange;//debug
 				margin-left: 215px;
 			}
-		}
-		#footer {
-			#footerNav {
-				display: block;
-				width: 90%;
-				margin: 0 auto;
-				ul {
-					list-style: none;
-					overflow: hidden;
-					li {
-						float: left;
-						width: 17%;
-						text-align: center;
+			#footer {
+				background-color: blue;//debug
+				#footerNav {
+					display: block;
+					width: 90%;
+					margin: 0 auto;
+					ul {
+						list-style: none;
+						overflow: hidden;
+						li {
+							float: left;
+							width: 17%;
+							text-align: center;
+						}
 					}
 				}
 			}
