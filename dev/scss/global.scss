@@ -18,33 +18,7 @@ a:hover {
 	color: $linkh;
 	text-decoration: underline;
 }
-//responsive tips
-//height hack
-html{
-	height: 100%;
-}
-body {
-	height: 100%;
-	#container {
-		height: auto;
-	}
-}
-#container {
-	min-height: 100%;
-	height: 100%;
-}
-//bar button
-.icon-bar {
-	display: block;
-	width: 22px;
-	height: 2px;
-	border-radius: 1px;
-	margin-top: 4px;
-}
-h1 {
-	display: none;
-	
-}
+//responsive elements
 
 
 //global layout
@@ -63,22 +37,22 @@ html {
 		p {
 			margin-top: 14px;
 		}
-		#header {
-			margin-bottom: 10px;
-			#headerNav {
-				//margin-bottom: 15px;
+		.container {
+			.header {
+				margin-bottom: 15px;
+				.headerNav {
+					//margin-bottom: 15px;
+					
+				}
 				
 			}
-			
-		}
-		#container {
 			.heading1 {
 				font:{
 					weight: bold;
 					size: 32px;
 				}
-				border-left: 5px solid $asso;
-				padding-left: 5px;
+				//border-left: 5px solid $asso;
+				//padding-left: 5px;
 			}
 			.heading2 {
 				font:{
@@ -88,17 +62,18 @@ html {
 				border-left: 3px solid $asso;
 				padding-left: 5px;
 			}
-			#headline {
-				width: 100%;
+			.headline {
+				//width: 100%;
+				margin-bottom: 15px;
 			}
-			#sidebar {
+			.sidebar {
 				//width: 100%;
 			}
-			#main {
+			.main {
 				//width: 100%;
 			}
-			#footer {
-				#copyright {
+			.footer {
+				.copyright {
 					text-align: center;
 					font:{
 						size: 11px;
@@ -109,49 +84,132 @@ html {
 		}
 	}
 }
-//phone style
+//phone style 0 ~ 479
 body {
-	#header {
-		display: block;
-		width: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
+	.container {
+		.header {
+			display: block;
+			width: 100%;
+			height: 50px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: $W;
+			.headerNav {
+				overflow: hidden;
+				.brand {
+					display: block;
+					float: left;
+					width: 150px;
+					margin-top: 5px;
+					margin-left: 15px;
+					text-align: center;
+					color: $dkGy;
+					font: {
+						size: 28px;
+					}
+					&:hover {
+						color: $mGy;
+						text-decoration: none;
+					}
+				}
+				.toggledMenu {
+					display: none;
+				}
+				.toggleButton {
+					display: block;
+					float: right;
+					overflow: hidden;
+					margin-top: 5px;
+					margin-right: 15px;
+					//width: 40px;
+					//height: 40px;
+					cursor: pointer;
+					background-color: $W;
+					border: 1px solid $ltGy;
+					border-radius: 2px;
+					&:hover {
+						background-color: $ltGy;
+					}
+					.icon-bar {
+						display: block;
+						width: 30px;
+						margin: 7px auto;
+						height: 2px;
+						border-radius: 1px;
+						background-color: $dkGy;
+					}
+				}
+			}
+		}
+		.headline {
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 50px;
+			padding-top: 15px;
+		}
+		.sidebar {
+			display: none;
+		}
+		.main {
+			
+		}
+		.footer {
+			
+		}
 	}
 }
 //tablet style
 @media all and (min-width: 480px) {
-
+	body {
+		.container {
+			.header {
+				
+			}
+			.headline {
+				
+			}
+			.sidebar {
+				
+			}
+			.main {
+				
+			}
+			.footer {
+				
+			}
+		}
+	}
 }
 //desktop style
 @media all and (min-width: 768px) {
 	body {
-		#header {
-			display: none;
-		}
-		#container {
-			
+		.container {
 			overflow: hidden;
 			width: 90%;
 			margin: 0 auto;
-			#headline {
-				width: 90%;
+			.header {
+				display: none;
+			}
+			
+			.headline {
+				//width: 90%;
 				margin: 0 auto;
-				background-color: green;//debug
+				//background-color: green;//debug
 				padding-left: 215px;
 			}
-			#sidebar {
+			.sidebar {
 				float: left;
 				width: 200px;
-				background-color: red;//debug
+				//background-color: red;//debug
 			}
-			#main {
-				background-color: orange;//debug
+			.main {
+				//background-color: orange;//debug
 				margin-left: 215px;
 			}
-			#footer {
-				background-color: blue;//debug
-				#footerNav {
+			.footer {
+				//background-color: blue;//debug
+				.footerNav {
 					display: block;
 					width: 90%;
 					margin: 0 auto;

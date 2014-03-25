@@ -57,7 +57,6 @@ responsive web template consists of html, scss, grunt, coffee and some images
     |  |--apple-touch-icon.png
     |  |--og.png
     |  |--robots.txt
-    |--node_modules/
     |--.git/
     |--.gitignore
     |--README.md
@@ -83,6 +82,7 @@ responsive web template consists of html, scss, grunt, coffee and some images
 ## todo(2014-03-25)
 
     remove ids <http://csslint.net/about.html>
+    create bar-icon button
     add some files
     work hard
 
