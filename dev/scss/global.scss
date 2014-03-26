@@ -66,7 +66,7 @@ html {
 			}
 			.headline {
 				//width: 100%;
-				margin-bottom: 15px;
+				margin-bottom: 20px;
 			}
 			.sidebar {
 				//width: 100%;
@@ -263,6 +263,21 @@ body {
 
 //desktop style
 @media all and (min-width: 768px){
+	//desktop style 769 ~ 
+	.heading1 {
+		position: relative;
+		height: 210px;
+		padding-top: 0;
+		width: 100%;
+	}
+	.cover {
+		//height: 100%;
+		position: absolute;
+		right: 0;
+		left: auto;
+		top: 0;
+		width: 640px;
+	}
 	body {
 		.container {
 			overflow: hidden;
@@ -271,12 +286,34 @@ body {
 			.header {
 				display: none;
 			}
-			
 			.headline {
-				//width: 90%;
+				width: 100%;
 				margin: 0 auto;
+				//position: relative;
+				//overflow: hidden;
 				//background-color: green;//debug
-				padding-left: 215px;
+				//padding-left: 215px;
+				p {
+					//float: right;
+					//position: relative;
+					//left: 0;
+					text-align: right;
+				}
+				.heading1 {
+					//overflow: hidden;
+					//background-color: red;
+					.cover {
+						//float: right;
+						//width: 640px;
+						background: {
+							image: url('../img/logo_640x200.png');
+							repeat: no-repeat;
+							//position: center center;
+							size: auto;
+							//color: orange;
+						}
+					}
+				}
 			}
 			.sidebar {
 				display: block;
@@ -295,6 +332,9 @@ body {
 						border: none;
 						margin-bottom: 2px;
 						//background-color: $W;
+						&:first-child {
+							border-top: none;
+						}
 						a {
 							display: block;
 							position: relative;

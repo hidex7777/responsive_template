@@ -50,7 +50,7 @@ html body .container .heading2
 }
 html body .container .headline
 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 html .footer .copyright
 {
@@ -242,6 +242,25 @@ body .footer .copyright
 
 @media all and (min-width: 768px)
 {
+    .heading1
+    {
+        position: relative;
+
+        width: 100%;
+        height: 210px;
+        padding-top: 0;
+    }
+
+    .cover
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: auto;
+
+        width: 640px;
+    }
+
     body .container
     {
         overflow: hidden;
@@ -255,8 +274,18 @@ body .footer .copyright
     }
     body .container .headline
     {
+        width: 100%;
         margin: 0 auto;
-        padding-left: 215px;
+    }
+    body .container .headline p
+    {
+        text-align: right;
+    }
+    body .container .headline .heading1 .cover
+    {
+        background-image: url('../img/logo_640x200.png');
+        background-repeat: no-repeat;
+        background-size: auto;
     }
     body .container .sidebar
     {
@@ -280,6 +309,10 @@ body .footer .copyright
         margin-bottom: 2px;
 
         border: none;
+    }
+    body .container .sidebar .sideMenu li:first-child
+    {
+        border-top: none;
     }
     body .container .sidebar .sideMenu li a
     {
