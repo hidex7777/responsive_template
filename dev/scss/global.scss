@@ -103,6 +103,7 @@ html {
 
 body {
 	.container {
+		position: relative;
 		.header {
 			display: block;
 			width: 100%;
@@ -112,7 +113,8 @@ body {
 			left: 0;
 			background-color: $W;
 			.headerNav {
-				overflow: hidden;
+				//overflow: hidden;
+				position: relative;
 				.brand {
 					display: block;
 					float: left;
@@ -132,13 +134,20 @@ body {
 				}
 				.toggledMenu {
 					display: none;
+					width: 100%;
+					
+					li {
+						width: 100%;
+						text-align: center;
+					}
 				}
 				.toggleButton {
 					display: block;
 					float: right;
 					overflow: hidden;
-					margin-top: 5px;
-					margin-right: 15px;
+					position: absolute;
+					top: 5px;
+					right: 15px;
 					//width: 40px;
 					//height: 40px;
 					cursor: pointer;
@@ -176,7 +185,39 @@ body {
 			}
 		}
 		.sidebar {
-			display: none;
+			//display: none;
+			.sideMenu {
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				li {
+					display: block;
+					//text-align: center;
+					//height: 49px;
+					border-bottom: 1px solid $Gy95;
+					//background-color: $W;
+					&:first-child {
+						border-top: 1px solid $Gy95;
+					}
+					a {
+						display: block;
+						position: relative;
+						text-align: center;
+						//border-bottom: 1px solid $Gy95;
+						background-color: $W;
+						color: $mGy;
+						text-decoration: none;
+						padding-top: 10px;
+						padding-bottom: 8px;
+						&:hover {
+							color: $dkGy;
+							background-color: $Gy95;
+						}
+					}
+				}
+			}
 		}
 		.main {
 			padding: 0 5px;

@@ -1,12 +1,12 @@
 'use strict'
 $ ->
 	$("#toggleButton").click ->
-		$("#toggledMenu").slideToggle()
+		$("#sideMenu").slideToggle()
 		return false
 	$(window).resize ->
 		win = $(window).width()
-		p = 480
+		p = 768
 		if win > p
-			$("#toggledmenu").show()
+			$("#sideMenu").show()
 		else
-			$("#toggledmenu").hide()
+			$("#sideMenu").hide()

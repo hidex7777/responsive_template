@@ -2,17 +2,17 @@
   'use strict';
   $(function() {
     $("#toggleButton").click(function() {
-      $("#toggledMenu").slideToggle();
+      $("#sideMenu").slideToggle();
       return false;
     });
     return $(window).resize(function() {
       var p, win;
       win = $(window).width();
-      p = 480;
+      p = 768;
       if (win > p) {
-        return $("#toggledmenu").show();
+        return $("#sideMenu").show();
       } else {
-        return $("#toggledmenu").hide();
+        return $("#sideMenu").hide();
       }
     });
   });
