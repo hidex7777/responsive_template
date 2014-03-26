@@ -59,8 +59,10 @@ html {
 					weight: bold;
 					size: 24px;
 				}
-				border-left: 3px solid $asso;
+				border-left: 3px solid $acce;
 				padding-left: 5px;
+				margin-left: 3px;
+				margin-top: 14px;
 			}
 			.headline {
 				//width: 100%;
@@ -76,15 +78,29 @@ html {
 				.copyright {
 					text-align: center;
 					font:{
-						size: 11px;
+						size: 14px;
 					}
-					color: $mGy;
+					color: $dkGy;
 				}
 			}
 		}
 	}
 }
+
 //phone style 0 ~ 479
+.heading1 {
+	position: relative;
+	height: 0;
+	padding-top: 56.25%;
+}
+.cover {
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
 body {
 	.container {
 		.header {
@@ -101,12 +117,13 @@ body {
 					display: block;
 					float: left;
 					width: 150px;
-					margin-top: 5px;
+					margin-top: 10px;
 					margin-left: 15px;
 					text-align: center;
 					color: $dkGy;
 					font: {
-						size: 28px;
+						size: 20px;
+						weight: bold;
 					}
 					&:hover {
 						color: $mGy;
@@ -148,19 +165,13 @@ body {
 			margin-top: 50px;
 			padding-top: 15px;
 			.heading1 {
-				position: relative;
-				width: 100%;
-				height: 0%;
-				padding-top: 56.25%;
 				.cover {
-					position: absolute;
-					left: 0;
-					top: 0;
-					width: 100%;
-					//height: 100%;
-					background-image: url('../img/logo_shadow480x270.png');
-					//content: url('../img/logo_shadow480x270.png');
-					z-index: 9;
+					background: {
+						image: url('../img/logo_noshadow480x270.png');
+						repeat: no-repeat;
+						//position: center center;
+						size: contain;
+					}
 				}
 			}
 		}
@@ -168,10 +179,12 @@ body {
 			display: none;
 		}
 		.main {
-			
+			padding: 0 5px;
 		}
 		.footer {
-			
+			.footerNav {
+				display: none;
+			}
 		}
 	}
 }
