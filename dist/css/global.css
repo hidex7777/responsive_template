@@ -367,4 +367,23 @@ body .footer .copyright
     {
         line-height: 30px;
     }
+    body .footer .aboutPage
+    {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    body .footer .aboutPage .footerline-one
+    {
+        width: 200px;
+
+        border-top: 2px solid #75362a;
+    }
+    body .footer .aboutPage address .addressTitle
+    {
+        font-size: 110%;
+    }
+    body .footer .aboutPage address ul
+    {
+        margin-top: 10px;
+    }
 }
