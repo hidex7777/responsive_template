@@ -74,15 +74,15 @@ html {
 			.main {
 				//width: 100%;
 			}
-			.footer {
-				.copyright {
-					text-align: center;
-					font:{
-						size: 14px;
-					}
-					color: $dkGy;
-				}
+		}
+	}
+	.footer {
+		.copyright {
+			text-align: center;
+			font:{
+				size: 14px;
 			}
+			color: $dkGy;
 		}
 	}
 }
@@ -208,9 +208,13 @@ body {
 						//border-bottom: 1px solid $Gy95;
 						background-color: $W;
 						color: $mGy;
-						text-decoration: none;
+						text:{
+							decoration: none;
+							shadow: none;
+						}
 						padding-top: 10px;
 						padding-bottom: 8px;
+						font-weight: bold;
 						&:hover {
 							color: $dkGy;
 							background-color: $Gy95;
@@ -222,15 +226,20 @@ body {
 		.main {
 			padding: 0 5px;
 		}
-		.footer {
-			.footerNav {
-				display: none;
-			}
+	}
+	.footer {
+		width: 100%;
+		background-color: $asso;
+		.footerNav {
+			display: none;
+		}
+		.copyright {
+			line-height: 50px;
 		}
 	}
 }
 //tablet style
-@media all and (min-width: 480px) {
+@media all and (min-width: 480px){
 	body {
 		.container {
 			.header {
@@ -245,14 +254,15 @@ body {
 			.main {
 				
 			}
-			.footer {
+		}
+		.footer {
 				
-			}
 		}
 	}
 }
+
 //desktop style
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px){
 	body {
 		.container {
 			overflow: hidden;
@@ -269,27 +279,66 @@ body {
 				padding-left: 215px;
 			}
 			.sidebar {
+				display: block;
 				float: left;
 				width: 200px;
 				//background-color: red;//debug
+				.sideMenu {
+					display: block;
+					position: relative;
+					width: 100%;
+					li {
+						display: block;
+						//text-align: center;
+						//height: 49px;
+						//border-radius: 2px;
+						border: none;
+						margin-bottom: 2px;
+						//background-color: $W;
+						a {
+							display: block;
+							position: relative;
+							border-radius: 2px;
+							background-color: $acce;
+							color: $asso;
+							font-weight: bold;
+							text:{
+								decoration: none;
+								align: center;
+								shadow: none;
+							}
+							padding:{
+								top: 10px;
+								bottom: 8px;
+							}
+							&:hover {
+								color: $acce;
+								background-color: $asso;
+							}
+						}
+					}
+				}
 			}
 			.main {
 				//background-color: orange;//debug
 				margin-left: 215px;
 			}
-			.footer {
-				//background-color: blue;//debug
-				.footerNav {
-					display: block;
-					width: 90%;
-					margin: 0 auto;
-					ul {
-						list-style: none;
-						overflow: hidden;
-						li {
-							float: left;
-							width: 17%;
-							text-align: center;
+		}
+		.footer {
+			.footerNav {
+				display: block;
+				width: 90%;
+				margin: 0 auto;
+				ul {
+					list-style: none;
+					overflow: hidden;
+					li {
+						float: left;
+						width: 19.5%;
+						text-align: center;
+						a {
+							//margin-top: 15px;
+							line-height: 30px;
 						}
 					}
 				}

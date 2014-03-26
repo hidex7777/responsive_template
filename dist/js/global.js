@@ -7,8 +7,9 @@
     });
     return $(window).resize(function() {
       var p, win;
-      win = $(window).width();
-      p = 768;
+      win = $("body").width();
+      console.log(win);
+      p = 752;
       if (win > p) {
         return $("#sideMenu").show();
       } else {

@@ -4,8 +4,10 @@ $ ->
 		$("#sideMenu").slideToggle()
 		return false
 	$(window).resize ->
-		win = $(window).width()
-		p = 768
+		win = $("body").width()
+		#debug
+		console.log win
+		p = 752
 		if win > p
 			$("#sideMenu").show()
 		else
