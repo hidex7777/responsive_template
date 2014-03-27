@@ -22,7 +22,6 @@ html body
     color: black;
     background-color: #e7d5d4;
     background-image: url('../img/texture.png');
-    text-shadow: 0 1px 0 white;
 }
 html body p
 {
@@ -51,6 +50,17 @@ html body .container .heading2
 html body .container .headline
 {
     margin-bottom: 20px;
+}
+html body .container .main .section
+{
+    margin-bottom: 15px;
+    padding: 15px;
+
+    background-color: white;
+}
+html .footer
+{
+    margin-top: 30px;
 }
 html .footer .copyright
 {
@@ -235,6 +245,26 @@ body .footer .footerNav
 {
     display: none;
 }
+body .footer .aboutPage
+{
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-top: 30px;
+}
+body .footer .aboutPage .footerline-one
+{
+    width: 200px;
+
+    border-top: 2px solid #75362a;
+}
+body .footer .aboutPage address .addressTitle
+{
+    font-size: 110%;
+}
+body .footer .aboutPage address ul
+{
+    margin-top: 10px;
+}
 body .footer .copyright
 {
     line-height: 50px;
@@ -289,6 +319,9 @@ body .footer .copyright
     }
     body .container .sidebar
     {
+        position: relative;
+        left: 0;
+
         display: block;
         float: left;
 
@@ -297,6 +330,7 @@ body .footer .copyright
     body .container .sidebar .sideMenu
     {
         position: relative;
+        left: 0;
 
         display: block;
 
@@ -369,21 +403,6 @@ body .footer .copyright
     }
     body .footer .aboutPage
     {
-        margin-top: 30px;
-        margin-left: 30px;
-    }
-    body .footer .aboutPage .footerline-one
-    {
-        width: 200px;
-
-        border-top: 2px solid #75362a;
-    }
-    body .footer .aboutPage address .addressTitle
-    {
-        font-size: 110%;
-    }
-    body .footer .aboutPage address ul
-    {
-        margin-top: 10px;
+        padding-top: 0;
     }
 }

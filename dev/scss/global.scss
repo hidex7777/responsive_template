@@ -33,7 +33,7 @@ html {
 			color: $base;
 		}
 		color: $text;
-		text-shadow: 0 1px 0 $W;
+		//text-shadow: 0 1px 0 $W;
 		p {
 			margin-top: 14px;
 		}
@@ -73,10 +73,16 @@ html {
 			}
 			.main {
 				//width: 100%;
+				.section {
+					background-color: $W;
+					padding: 15px;
+					margin-bottom: 15px;
+				}
 			}
 		}
 	}
 	.footer {
+		margin-top: 30px;
 		.copyright {
 			text-align: center;
 			font:{
@@ -233,6 +239,31 @@ body {
 		.footerNav {
 			display: none;
 		}
+		.aboutPage {
+			margin:{
+				top: 30px;
+				left: 30px;
+			}
+			padding:{
+				top: 30px;
+			}
+			.footerline-one {
+				width: 200px;
+				border-top: 2px solid $acce;
+			}
+			address {
+				.addressTitle {
+					
+					
+					font:{
+						size:110%;
+					}
+				}
+				ul {
+					margin-top: 10px;
+				}
+			}
+		}
 		.copyright {
 			line-height: 50px;
 		}
@@ -243,12 +274,13 @@ body {
 	body {
 		.container {
 			.header {
-				
+
 			}
 			.headline {
 				
 			}
 			.sidebar {
+				
 				
 			}
 			.main {
@@ -317,12 +349,15 @@ body {
 			}
 			.sidebar {
 				display: block;
+				position: relative;
+				left: 0;
 				float: left;
 				width: 200px;
 				//background-color: red;//debug
 				.sideMenu {
 					display: block;
 					position: relative;
+					left: 0;
 					width: 100%;
 					li {
 						display: block;
@@ -391,24 +426,7 @@ body {
 				}
 			}
 			.aboutPage {
-				margin-top: 30px;
-				margin-left: 30px;
-				.footerline-one {
-					width: 200px;
-					border-top: 2px solid $acce;
-				}
-				address {
-					.addressTitle {
-						
-						
-						font:{
-							size:110%;
-						}
-					}
-					ul {
-						margin-top: 10px;
-					}
-				}
+				padding-top: 0;
 			}
 		}
 	}
