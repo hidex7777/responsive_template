@@ -53,7 +53,7 @@ module.exports = (grunt) ->
 					port: 80
 		watch:
 			files: ["<%= dir.src %>/**/*.scss", "<%= dir.src %>/**/*.coffee"]
-			tasks: ["compass", "copy:spritesImg", "autoprefixer", "csscomb", "csslint", "clean:deleteSprites", "coffee", "jshint"]
+			tasks: ["compass", "copy:spritesImg", "autoprefixer", "csscomb", "clean:deleteSprites", "coffee", "jshint", "csslint"]
 
 	#plugin
 	for taskName of pkg.devDependencies

@@ -1,5 +1,7 @@
 a, a:visited
 {
+    -webkit-transition: .5s;
+            transition: .5s;
     text-decoration: none;
 
     color: #75362a;
@@ -44,6 +46,7 @@ html body .container .heading2
     font-weight: bold;
 
     margin-top: 14px;
+    margin-bottom: 15px;
     margin-left: 3px;
     padding-left: 5px;
 
@@ -71,6 +74,74 @@ html .footer .copyright
     text-align: center;
 
     color: #3f3f3f;
+}
+
+.section
+{
+    overflow: hidden;
+}
+.section .dotted
+{
+    clear: both;
+
+    border: 0;
+    border-bottom: 1px dashed #f1f1f1;
+    background: #7f7f7f;
+}
+.section .product1c1r
+{
+    float: left;
+    overflow: hidden;
+
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    background-color: #c6bea1;
+}
+.section .product1c1r .productItem
+{
+    width: 120px;
+    height: 120px;
+}
+.section .product1c1r p
+{
+    padding: 0 10px;
+}
+.section .product2c1r
+{
+    float: left;
+    overflow: hidden;
+
+    width: 250px;
+    height: 120px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    text-overflow: ellipsis;
+
+    background-color: #c6bea1;
+}
+.section .product2c1r p
+{
+    padding: 0 10px;
+}
+.section .product2c2r
+{
+    float: left;
+    overflow: hidden;
+
+    width: 250px;
+    height: 250px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    background-color: #c6bea1;
+}
+.section .product2c2r p
+{
+    padding: 0 10px;
 }
 
 body .container

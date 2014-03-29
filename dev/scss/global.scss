@@ -13,6 +13,7 @@ $linkh: $sf4;//link-hover-color
 a, a:visited {
 	color: $link;
 	text-decoration: none;
+	transition: 0.5s;
 }
 a:hover {
 	color: $linkh;
@@ -42,7 +43,6 @@ html {
 			.header {
 				margin-bottom: 15px;
 				.headerNav {
-					//margin-bottom: 15px;
 					
 				}
 				
@@ -63,8 +63,11 @@ html {
 				}
 				border-left: 3px solid $acce;
 				padding-left: 5px;
-				margin-left: 3px;
-				margin-top: 14px;
+				margin:{
+					left: 3px;
+					top: 14px;
+					bottom: 15px;
+				}
 			}
 			.headline {
 				//width: 100%;
@@ -91,6 +94,69 @@ html {
 				size: 14px;
 			}
 			color: $dkGy;
+		}
+	}
+}
+
+//liquid layout
+//1column: 120px * 120px margin 10px;
+//2column: 250px margin 10px;
+
+.section {
+	overflow: hidden;
+	.dotted {
+		clear: both;
+		border: 0;
+		border-bottom: 1px dashed $Gy95;
+		background: $mGy;
+	}
+	.product1c1r {
+		float: left;
+		width: 120px;
+		height: 120px;
+		margin:{
+			bottom: 10px;
+			right: 10px;
+		}
+		background-color: $asso;
+		overflow: hidden;
+		.productItem {
+			width: 120px;
+			height: 120px;
+		}
+		p {
+			padding: 0 10px;
+		}
+	}
+	.product2c1r {
+		float: left;
+		width: 250px;
+		height: 120px;
+		margin:{
+			bottom: 10px;
+			right: 10px;
+		}
+		background-color: $asso;
+		//white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		p {
+			padding: 0 10px;
+		}
+		
+	}
+	.product2c2r {
+		float: left;
+		width: 250px;
+		height: 250px;
+		margin:{
+			bottom: 10px;
+			right: 10px;
+		}
+		background-color: $asso;
+		overflow: hidden;
+		p {
+			padding: 0 10px;
 		}
 	}
 }
@@ -305,7 +371,8 @@ body {
 
 //desktop style
 @media all and (min-width: 768px){
-	//desktop style 769 ~ 
+//desktop style 769 ~ 
+
 //	.heading1 {
 //		position: relative;
 //		height: 210px;
