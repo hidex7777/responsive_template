@@ -25,7 +25,8 @@ a:hover {
 html {
 	font:{
 		size: 16px;
-		family: sans-serif;
+		family: 'Roboto', sans-serif;
+		weight: 400;
 	}
 	body {
 		background:{
@@ -48,9 +49,10 @@ html {
 			}
 			.heading1 {
 				font:{
-					weight: bold;
-					size: 32px;
+					weight: 700;
+					//size: 32px;
 				}
+				color: $acce;
 				//border-left: 5px solid $asso;
 				//padding-left: 5px;
 			}
@@ -94,18 +96,18 @@ html {
 }
 
 //phone style 0 ~ 479
-.heading1 {
-	position: relative;
-	height: 0;
-	padding-top: 56.25%;
-}
-.cover {
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-}
+//.heading1 {
+//	position: relative;
+//	height: 0;
+//	padding-top: 56.25%;
+//}
+//.cover {
+//	height: 100%;
+//	position: absolute;
+//	left: 0;
+//	top: 0;
+//	width: 100%;
+//}
 
 body {
 	.container {
@@ -118,6 +120,7 @@ body {
 			top: 0;
 			left: 0;
 			background-color: $W;
+			box-shadow: 0 1px 0 $ltGy;
 			.headerNav {
 				//overflow: hidden;
 				position: relative;
@@ -180,14 +183,18 @@ body {
 			margin-top: 50px;
 			padding-top: 15px;
 			.heading1 {
-				.cover {
-					background: {
-						image: url('../img/logo_noshadow480x270.png');
-						repeat: no-repeat;
-						//position: center center;
-						size: contain;
-					}
+				font:{
+					weight: 700;
+					size: 30px;
 				}
+//				.cover {
+//					background: {
+//						image: url('../img/logo_noshadow480x270.png');
+//						repeat: no-repeat;
+//						//position: center center;
+//						size: contain;
+//					}
+//				}
 			}
 		}
 		.sidebar {
@@ -242,7 +249,8 @@ body {
 		.aboutPage {
 			margin:{
 				top: 30px;
-				left: 30px;
+				left: 15px;
+				right: 15px;
 			}
 			padding:{
 				top: 30px;
@@ -253,8 +261,6 @@ body {
 			}
 			address {
 				.addressTitle {
-					
-					
 					font:{
 						size:110%;
 					}
@@ -277,7 +283,11 @@ body {
 
 			}
 			.headline {
-				
+				text-align: right;
+				.heading1 {
+					text-align: center;
+					font-size: 50px;
+				}
 			}
 			.sidebar {
 				
@@ -296,20 +306,20 @@ body {
 //desktop style
 @media all and (min-width: 768px){
 	//desktop style 769 ~ 
-	.heading1 {
-		position: relative;
-		height: 210px;
-		padding-top: 0;
-		width: 100%;
-	}
-	.cover {
-		//height: 100%;
-		position: absolute;
-		right: 0;
-		left: auto;
-		top: 0;
-		width: 640px;
-	}
+//	.heading1 {
+//		position: relative;
+//		height: 210px;
+//		padding-top: 0;
+//		width: 100%;
+//	}
+//	.cover {
+//		//height: 100%;
+//		position: absolute;
+//		right: 0;
+//		left: auto;
+//		top: 0;
+//		width: 640px;
+//	}
 	body {
 		.container {
 			overflow: hidden;
@@ -332,19 +342,21 @@ body {
 					text-align: right;
 				}
 				.heading1 {
+					text-align: right;
+					font-size: 70px;
 					//overflow: hidden;
 					//background-color: red;
-					.cover {
-						//float: right;
-						//width: 640px;
-						background: {
-							image: url('../img/logo_640x200.png');
-							repeat: no-repeat;
-							//position: center center;
-							size: auto;
-							//color: orange;
-						}
-					}
+//					.cover {
+//						//float: right;
+//						//width: 640px;
+//						background: {
+//							image: url('../img/logo_640x200.png');
+//							repeat: no-repeat;
+//							//position: center center;
+//							size: auto;
+//							//color: orange;
+//						}
+//					}
 				}
 			}
 			.sidebar {
@@ -426,7 +438,14 @@ body {
 				}
 			}
 			.aboutPage {
-				padding-top: 0;
+				margin:{
+					top: 0;
+					left: 30px;
+					right: 30px;
+				}
+				padding:{
+					top: 0;
+				}
 			}
 		}
 	}

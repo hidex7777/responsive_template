@@ -14,8 +14,9 @@ a:hover
 
 html
 {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    font-weight: 400;
 }
 html body
 {
@@ -33,8 +34,9 @@ html body .container .header
 }
 html body .container .heading1
 {
-    font-size: 32px;
-    font-weight: bold;
+    font-weight: 700;
+
+    color: #75362a;
 }
 html body .container .heading2
 {
@@ -71,24 +73,6 @@ html .footer .copyright
     color: #3f3f3f;
 }
 
-.heading1
-{
-    position: relative;
-
-    height: 0;
-    padding-top: 56.25%;
-}
-
-.cover
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-}
-
 body .container
 {
     position: relative;
@@ -105,6 +89,7 @@ body .container .header
     height: 50px;
 
     background-color: white;
+    box-shadow: 0 1px 0 #bfbfbf;
 }
 body .container .header .headerNav
 {
@@ -182,11 +167,10 @@ body .container .headline
     margin-top: 50px;
     padding-top: 15px;
 }
-body .container .headline .heading1 .cover
+body .container .headline .heading1
 {
-    background-image: url('../img/logo_noshadow480x270.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    font-size: 30px;
+    font-weight: 700;
 }
 body .container .sidebar .sideMenu
 {
@@ -248,7 +232,8 @@ body .footer .footerNav
 body .footer .aboutPage
 {
     margin-top: 30px;
-    margin-left: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
     padding-top: 30px;
 }
 body .footer .aboutPage .footerline-one
@@ -270,27 +255,21 @@ body .footer .copyright
     line-height: 50px;
 }
 
+@media all and (min-width: 480px)
+{
+    body .container .headline
+    {
+        text-align: right;
+    }
+    body .container .headline .heading1
+    {
+        font-size: 50px;
+
+        text-align: center;
+    }
+}
 @media all and (min-width: 768px)
 {
-    .heading1
-    {
-        position: relative;
-
-        width: 100%;
-        height: 210px;
-        padding-top: 0;
-    }
-
-    .cover
-    {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: auto;
-
-        width: 640px;
-    }
-
     body .container
     {
         overflow: hidden;
@@ -311,11 +290,11 @@ body .footer .copyright
     {
         text-align: right;
     }
-    body .container .headline .heading1 .cover
+    body .container .headline .heading1
     {
-        background-image: url('../img/logo_640x200.png');
-        background-repeat: no-repeat;
-        background-size: auto;
+        font-size: 70px;
+
+        text-align: right;
     }
     body .container .sidebar
     {
@@ -403,6 +382,9 @@ body .footer .copyright
     }
     body .footer .aboutPage
     {
+        margin-top: 0;
+        margin-right: 30px;
+        margin-left: 30px;
         padding-top: 0;
     }
 }
