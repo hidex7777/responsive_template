@@ -160,7 +160,8 @@ body .container .header
     height: 50px;
 
     background-color: white;
-    box-shadow: 0 1px 0 #bfbfbf;
+    -webkit-box-shadow: 0 1px 0 #bfbfbf;
+            box-shadow: 0 1px 0 #bfbfbf;
 }
 body .container .header .headerNav
 {

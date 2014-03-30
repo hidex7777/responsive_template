@@ -13,8 +13,8 @@ module.exports = (grunt) ->
 					imagesDir: "<%= dir.src %>/img"
 					noLineComments: true
 		autoprefixer:
-			options:
-				browsers: [ "last 2 version", "ie 8", "ie 9" ]
+			#options:
+				#browsers: [ "last 2 version", "ie 8", "ie 9" ]
 			dev:
 				src: "<%= dir.dist %>/css/global.css"
 				dest: "<%= dir.dist %>/css/global.css"
@@ -46,7 +46,8 @@ module.exports = (grunt) ->
 			#options:
 				#jshintrc: "<%= dir.src %>/coffee/.jshintrc"
 			src:
-				src: "<%= dir.dist %>/js/global.js"
+				#cwd: "<%= dir.dist %>/js/"
+				src: "<%= dir.dist %>/js/*.js"
 		connect:
 			server:
 				options:
